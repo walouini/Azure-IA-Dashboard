@@ -2,19 +2,12 @@
 
 ## Prérequis
 
-- Node.js 18+ (idéalement via nvm)
+- Node.js 18+
 - npm/pnpm/yarn
 
-> Astuce nvm :
->
-> ```bash
-> nvm install 22
-> nvm alias default 22
-> nvm use
-> ```
 
 ## Installation
 
 ```bash
-npm i
+npm install
 ```
