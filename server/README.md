@@ -19,7 +19,3 @@
 - AZURE_OPENAI_DEPLOYMENT=gpt-4o-mini
 - AZURE_OPENAI_API_VERSION=2024-02-15-preview
 - PORT=8787
-
-```
-
-```
