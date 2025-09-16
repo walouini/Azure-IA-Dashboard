@@ -10,7 +10,9 @@
 
 ## Installation
 
-- npm install
+```bash
+npm install
+```
 
 ## Crée un fichier .env à la racine du dossier server/
 
