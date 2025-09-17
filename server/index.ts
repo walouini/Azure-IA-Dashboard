@@ -24,9 +24,6 @@ app.post("/api/chat", async (req, res) => {
   try {
     const { messages = [], temperature = 0.2 } = req.body || {};
 
-    console.log("messages:", req.body);
-
-    // messages attendu : [{role:"system"|"user"|"assistant", content:"..."}]
     const url = `${endpoint}/openai/deployments/${deployment}/chat/completions?api-version=${apiVersion}`;
 
     const azureRes = await fetch(url, {
@@ -49,7 +46,6 @@ app.post("/api/chat", async (req, res) => {
     }
 
     const data = await azureRes.json();
-    // format Azure chat.completions : data.choices[0].message.content
     const reply = data?.choices?.[0]?.message?.content ?? "(pas de réponse)";
     res.json({ reply });
   } catch (e: any) {
