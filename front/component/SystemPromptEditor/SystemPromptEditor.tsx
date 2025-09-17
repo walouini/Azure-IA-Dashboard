@@ -45,7 +45,7 @@ export default function SystemPromptEditor({
           </Button>
         </div>
 
-        {/* body scrollable */}
+        {/* body */}
         <div className="p-4 max-h-[70dvh] overflow-auto">
           <Textarea
             value={text}
@@ -55,7 +55,7 @@ export default function SystemPromptEditor({
           />
         </div>
 
-        {/* footer toujours visible */}
+        {/* footer */}
         <div className="p-3 border-t bg-white flex items-center justify-end gap-2 sticky bottom-0">
           <Button variant="ghost" onClick={() => setOpen(false)}>Annuler</Button>
           <Button onClick={() => { onChange(text.trim() || null); setOpen(false); }}>
